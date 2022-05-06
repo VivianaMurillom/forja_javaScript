@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+    <title>Registro</title>
+</head>
+<body>
+
+    <header class="p-header">
+        <div class="p-1">
+            <img src="../assets/img/logoforja.png" alt="Logo Forja">
+            <div class="p-botones">
+                <a href="../index.html"><button><i class="fa-solid fa-house-user"></i></button></a>
+                <a href="dashboard.html"><button><i class="fa-solid fa-power-off"></i></button></a>
+            </div>
+        </div>
+        
+        <div class="p-division">
+            <img src="../assets/img/franja.svg" alt="division">
+        </div>
+
+    </header>
+
+    <main>
+        <section>
+
+            <div  class="r-section">
+                <h1 class="h1-important">Registro Usuario Nuevo</h1>
+
+                <div class="form-registro">
+                    <form action="post">
+                        <div class="form-part1">
+                            <input type="date" name="fecha" id="fecha">
+                            <input type="number" name="idform" id="idform" placeholder="N Registro">
+                        </div>
+
+                        <div class="r-labels">
+                            <i class="fa-solid fa-user"></i>
+                            <h1 id="sub-h1">Datos del Paciente</h1>
+                        </div>
+
+                        <div class="form-part2">
+                            <div class="subdiv">
+                                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
+                                <input type="text" name="apellido" id="apellido" placeholder="Apellidos">
+                            </div>
+                            <div class="subdiv">
+                                <input type="number" name="identificacion" id="identificacion" placeholder="Número de identificación">
+                                <select name="tipo-id" id="tipo-id">
+                                    <option value="0">Seleccione el tipo de documento</option>
+                                    <option value="1">Cédula de ciudadanía</option>
+                                    <option value="2">Cédula de extranjería</option>
+                                    <option value="3">Tarjeta de identidad</option>
+                                    <option value="4">Pasaporte</option>
+                                </select>
+                            </div>
+                            <div class="subdiv">
+                                <input type="date" name="nacimiento" id="nacimiento">
+                                <input type="number" name="edad" id="edad" placeholder="Edad">
+                            </div>
+                        </div>
+
+                        <div class="r-labels">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h1 id="sub-h1">Información de contacto</h1>
+                        </div>
+
+                        <div class="form-part3">
+                            <div class="subdiv">
+                                <select class="form-control" id="departamento" name="departamento">
+                                    <option value = "">Departamento de residencia</option>
+                                    <option value = "Amazonas">Amazonas</option>
+                                    <option value = "Antioquia">Antioquia</option>
+                                    <option value = "Arauca">Arauca</option>
+                                    <option value = "Atlántico">Atlántico</option>
+                                    <option value = "Bolívar">Bolívar</option>
+                                    <option value = "Boyacá">Boyacá</option>
+                                    <option value = "Caldas">Caldas</option>
+                                    <option value = "Caquetá">Caquetá</option>
+                                    <option value = "Casanare">Casanare</option>
+                                    <option value = "Cauca">Cauca</option>
+                                    <option value = "Cesar">Cesar</option>
+                                    <option value = "Chocó">Chocó</option>		            
+                                    <option value = "Córdoba">Córdoba</option>
+                                    <option value = "Cundinamarca">Cundinamarca</option>
+                                    <option value = "Guainía">Guainía</option>
+                                    <option value = "Guaviare">Guaviare</option>
+                                    <option value = "Huila">Huila</option>
+                                    <option value = "La Guajira">La Guajira</option>
+                                    <option value = "Magdalena">Magdalena</option>
+                                    <option value = "Meta">Meta</option>
+                                    <option value = "Nariño">Nariño</option>
+                                    <option value = "Norte de Santander">Norte de Santander</option>
+                                    <option value = "Putumayo">Putumayo</option>                
+                                    <option value = "Quindío">Quindío</option>  
+                                    <option value = "Risaralda">Risaralda</option>
+                                    <option value = "San Andrés y Providencia">San Andrés y Providencia</option>
+                                    <option value = "Santander">Santander</option>
+                                    <option value = "Sucre">Sucre</option>
+                                    <option value = "Tolima">Tolima</option>
+                                    <option value = "Valle del Cauca">Valle del Cauca</option>
+                                    <option value = "Vaupés">Vaupés</option>
+                                    <option value = "Vichada">Vichada</option>
+                                </select>
+
+                                <select class="form-control" id="inputCiudadLine2">
+                                    <option value="">Ciudad de residencia</option>
+                                    <option value="Arauca">Arauca</option>
+                                    <option value="Armenia">Armenia</option>
+                                    <option value="Barranquilla">Barranquilla</option>
+                                    <option value="Bogotá">Bogotá</option>
+                                    <option value="Bucaramanga">Bucaramanga</option>
+                                    <option value="Cali">Cali</option>
+                                    <option value="Cartagena">Cartagena</option>
+                                    <option value="Cúcuta">Cúcuta</option>
+                                    <option value="Florencia">Florencia</option>
+                                    <option value="Ibagué">Ibagué</option>
+                                    <option value="Leticia">Leticia</option>
+                                    <option value="Manizales">Manizales</option>
+                                    <option value="Medellín">Medellín</option>
+                                    <option value="Mitú">Mitú</option>
+                                    <option value="Mocoa">Mocoa</option>
+                                    <option value="Montería">Montería</option>
+                                    <option value="Neiva">Neiva</option>
+                                    <option value="Pasto">Pasto</option>
+                                    <option value="Pereira">Pereira</option>
+                                    <option value="Popayán">Popayán</option>
+                                    <option value="Puerto Carreño">Puerto Carreño</option>
+                                    <option value="Puerto Inírida">Puerto Inírida</option>
+                                    <option value="Quibdó">Quibdó</option>
+                                    <option value="Riohacha">Riohacha</option>
+                                    <option value="San Andrés">San Andrés</option>
+                                    <option value="San José del Guaviare">San José del Guaviare</option>
+                                    <option value="Santa Marta">Santa Marta</option>
+                                    <option value="Sincelejo">Sincelejo</option>
+                                    <option value="Tunja">Tunja</option>
+                                    <option value="Valledupar">Valledupar</option>
+                                    <option value="Villavicencio">Villavicencio</option>
+                                    <option value="Yopal">Yopal</option>
+                                </select>
+                            </div>
+
+                            <div class="subdiv">
+                                <input type="text" name="direccion" id="direccion" placeholder="Dirección">
+                                <input type="email" name="correo" id="correo" placeholder="Correo">
+                            </div>
+
+                            <div class="subdiv">
+                                <input type="number" name="fijo" id="fijo" placeholder="Télefono fijo">
+                                <input type="number" name="celular" id="celular" placeholder="Celular">
+                            </div>
+                        </div>
+
+                        <div class="r-labels">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                            <h1 id="sub-h1">Estado de salud</h1>
+                        </div>
+
+                        <div class="form-part4">
+                            <select class="preexistencias" id="preexistencias">
+                                <option value="">Preexistencias</option>
+                                <option value="EPOC">Enfermedad pulmonar obstructiva crónica</option>
+                                <option value="Cáncer de pulmón">Cáncer de pulmón</option>
+                                <option value="Fibrosis quística">Fibrosis quística</option>
+                                <option value="Fibrosis pulmonar">Fibrosis pulmonar</option>
+                                <option value="Asma moderada a grave">Asma moderada a grave</option>
+                                <option value="Hipertensión pulmonar">Hipertensión pulmonar</option>
+                                <option value="Embolia pulmonar">Embolia pulmonar</option>
+                            </select>
+
+                            <select class="discapacidad" id="discapacidad">
+                                <option value="">Discapacidad</option>
+                                <option value="Discapacidad Auditiva">Discapacidad Auditiva</option>
+                                <option value="Discapacidad Visual">Discapacidad Visual</option>
+                                <option value="Sordoceguera">Sordoceguera</option>
+                                <option value="Discapacidad Intelectual">Discapacidad Intelectual</option>
+                                <option value="Discapacidad Psicosocial">Discapacidad Psicosocia (Mental)</option>
+                                <option value="Discapacidad Múltiple">Discapacidad Múltiple</option>
+                            </select>
+
+                            <input type="text" name="alergias" id="alergias" placeholder="Alergias">
+                        </div>
+
+                        <div class="form-part5">
+                            <p>¿El paciente se ha realizado la prueba del COVID-19 con anterioridad y esta le ha salido positiva?</p>
+                            <div class="selector">
+                                <input type="radio" name="prubac" id="pruebac">Sí
+                                <input type="radio" name="prubac" id="pruebac">No
+                            </div>
+
+                            <p>¿El paciente ha tenido un contacto estrecho o cercano con una persona confirmada o sospechosa de COVID-19 en los últimos 14 días?</p>
+                            <div class="selector">
+                                <input type="radio" name="prubac" id="pruebac">Sí
+                                <input type="radio" name="prubac" id="pruebac">No
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="r-boton">
+                    <a href="pacientes.html"><button class="confirmar">Guardar</button></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&#9426 2021 Forja Empresas</p>
+    </footer>
+</body>
+<script src="https://kit.fontawesome.com/c887defe45.js" crossorigin="anonymous"></script>
+</html>

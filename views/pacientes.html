@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+    <title>Pacientes</title>
+</head>
+<body>
+
+    <header class="p-header">
+        <div class="p-1">
+            <img src="../assets/img/logoforja.png" alt="Logo Forja">
+            <div class="p-botones">
+                <a href="../index.html"><button><i class="fa-solid fa-house-user"></i></button></a>
+                <a href="dashboard.html"><button><i class="fa-solid fa-power-off"></i></button></a>
+            </div>
+        </div>
+        
+        <div class="p-division">
+            <img src="../assets/img/franja.svg" alt="division">
+        </div>
+
+    </header>
+
+    <main>
+        <section>
+            <div class="p-section">
+                <button class="confirmar"><a href="pacientesRegistro.html">Agregar<i class="fa-solid fa-user-plus"></i></a></button>
+                <h1>Pacientes</h1> 
+
+                <div class="p-form">
+                    <form class="form-p" action="post">
+   
+                        <input type="text" placeholder="Número de documento">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    
+                    </form>
+                </div>
+            </div>
+
+            <div class="p-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th># de Registro</th>
+                            <th># de Documento</th>
+                            <th>Nombres</th>
+                            <th>Apellidos</th>
+                            <th>Edad</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-titulo="Registro">1234</td>
+                            <td data-titulo="Documento">56839928</td>
+                            <td data-titulo="Nombres">Gregorio</td>
+                            <td data-titulo="Apellidos">Manriquez</td>
+                            <td data-titulo="Edad">40</td>
+                            <td class="botones-funciones">
+                                <button class="editar">Editar<i class="fa-solid fa-pen"></i></button>
+                                <button class="eliminar">Eliminar<i class="fa-solid fa-x"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-titulo="Registro">1235</td>
+                            <td data-titulo="Documento">1239003874</td>
+                            <td data-titulo="Nombres">Andrea</td>
+                            <td data-titulo="Apellidos">Lopez</td>
+                            <td data-titulo="Edad">26</td>
+                            <td class="botones-funciones">
+                                <button class="editar">Editar<i class="fa-solid fa-pen"></i></button>
+                                <button class="eliminar">Eliminar<i class="fa-solid fa-x"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-titulo="Registro">1236</td>
+                            <td data-titulo="Documento">399023</td>
+                            <td data-titulo="Nombres">Anatolio</td>
+                            <td data-titulo="Apellidos">Perez</td>
+                            <td data-titulo="Edad">81</td>
+                            <td class="botones-funciones">
+                                <button class="editar">Editar<i class="fa-solid fa-pen"></i></button>
+                                <button class="eliminar">Eliminar<i class="fa-solid fa-x"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-titulo="Registro">1237</td>
+                            <td data-titulo="Documento">389023</td>
+                            <td data-titulo="Nombres">Maria</td>
+                            <td data-titulo="Apellidos">Perea</td>
+                            <td data-titulo="Edad">79</td>
+                            <td class="botones-funciones">
+                                <button class="editar">Editar<i class="fa-solid fa-pen"></i></button>
+                                <button class="eliminar">Eliminar<i class="fa-solid fa-x"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-titulo="Registro">1238</td>
+                            <td data-titulo="Documento">1238394903</td>
+                            <td data-titulo="Nombres">Oscar</td>
+                            <td data-titulo="Apellidos">Vivas</td>
+                            <td data-titulo="Edad">24</td>
+                            <td class="botones-funciones">
+                                <button class="editar">Editar<i class="fa-solid fa-pen"></i></button>
+                                <button class="eliminar">Eliminar<i class="fa-solid fa-x"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-titulo="Registro">1239</td>
+                            <td data-titulo="Documento">1293034849</td>
+                            <td data-titulo="Nombres">Ana</td>
+                            <td data-titulo="Apellidos">Tique</td>
+                            <td data-titulo="Edad">23</td>
+                            <td class="botones-funciones">
+                                <button class="editar">Editar<i class="fa-solid fa-pen"></i></button>
+                                <button class="eliminar">Eliminar<i class="fa-solid fa-x"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&#9426 2021 Forja Empresas</p>
+    </footer>
+</body>
+<script src="https://kit.fontawesome.com/c887defe45.js" crossorigin="anonymous"></script>
+</html>
