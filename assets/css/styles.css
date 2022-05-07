@@ -212,16 +212,6 @@ header {
 	position: relative;
 }
 
-/* .b-fondo-i::before {
-    content:'';
-	position: absolute;
-    top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: rgba(255, 254, 254, 0.7);
-} */
-
 #info-box {
     background-color: rgba(255, 254, 254, 0.7);
     display: flex;
@@ -720,6 +710,49 @@ form {
     padding: .3rem;
 }
 
+/* Formulario de vacunas*/
+.subdiv_vaccine {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    width: 100%;
+}
+
+.form-pairs{
+    margin: .5rem 0;
+}
+
+.subdiv_vaccine input, .subdiv_vaccine select{
+    color: grey;
+    border: 1px solid var(--blue-color);
+    border-radius: 5px;
+    min-height: 30px;
+    width: 100%;
+}
+
+.subdiv_vaccine input{
+    margin: 0;
+    padding: 0;
+}
+
+.simpleLabel{
+    padding: .5rem;
+}
+
+.dateNextVaccine{
+    background-color: var(--gray-color);
+    border: 1px solid var(--darkblue-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.dateNextVaccine p{
+    color: var(--orange-color);
+    text-align: center;
+}
+
 /* Pacientes.html*/
 
 .p-header {
@@ -927,7 +960,6 @@ table td[data-titulo]::before {
     color: grey;
     border: 1px solid var(--blue-color);
     border-radius: 5px;
-    margin: .5rem;
 }
 
 .r-labels {
@@ -1059,6 +1091,35 @@ table td[data-titulo]::before {
 
     .table-vaccine{
         margin: 1rem auto;
+    }
+
+    /* Formulario de vacunas*/
+    .vaccine form{
+        justify-content: center;
+        min-width: 600px;
+    }
+
+    .subdiv_vaccine{
+        flex-direction: row;
+        margin: .5rem;
+    }
+
+    .form-pairs{
+        flex-basis: 50%;
+        margin: 0 .5rem;
+    }
+
+    .subdiv_vaccine input, .subdiv_vaccine select{
+        max-height: 31px;
+    }
+
+    .simpleLabel{
+        padding: .5rem 0;
+    }
+
+    .dateNextVaccine{
+        margin: .5rem auto;
+        max-width: 400px;
     }
 
     /* Pacientes.html*/

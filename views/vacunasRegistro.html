@@ -14,7 +14,7 @@
         <div class="p-1">
             <img src="../assets/img/logoforja.png" alt="Logo Forja">
             <div class="p-botones">
-                <a href="../index.html"><button><i class="fa-solid fa-house-user"></i></button></a>
+                <a href="../views/login.html"><button><i class="fa-solid fa-house-user"></i></button></a>
                 <a href="dashboard.html"><button><i class="fa-solid fa-power-off"></i></button></a>
             </div>
         </div>
@@ -31,53 +31,91 @@
             <div  class="r-section">
                 <h1 class="h1-important">Formulario de ingreso de vacunación</h1>
 
-                <div class="form-registro">
+                <div class="form-registro vaccine">
                     <form action="post">
-                        <label for="names">Nombres</label>
-                        <input type="text" name="names" id="names">
-                        <label for="lastNames">Apellidos</label>
-                        <input type="text" name="lastNames" id="lastNames">
-                        <label for="tipeOfDocument">Tipo de documento</label>
-                        <select class="tipeOfDocument" id="tipeOfDocument">
-                            <option value="0">Seleccionar</option>
-                            <option value="1">Tarjeta de identidad</option>
-                            <option value="2">Cédula de ciudadanía</option>
-                            <option value="3">Pasaporte</option>
-                            <option value="4">Cédula de extranjería</option>
-                            <option value="5">Registro civil</option>
-                        </select>
-                        <label for="numberDocument">Número de documento</label>
-                        <input type="number" name="numberDocument" id="numberDocument">
-                        <label for="DateDocument">Fecha de expedición del documento</label>
-                        <input type="date" name="DateDocument" id="DateDocument">
-                        <label for="birthday">Fecha de nacimiento</label>
-                        <input type="date" name="birthday" id="birthday">
-                        <label for="address">Dirección</label>
-                        <input type="text" name="address" id="address">
-                        <label for="eps">EPS</label>
-                        <input type="text" name="eps" id="eps">
-                        <label for="age">Edad</label>
-                        <input type="number" name="age" id="age">
-                        <label for="dateVaccine">Fecha de vacunación</label>
-                        <input type="date" name="birthday" id="birthday">
-                        <label for="tipeOfVaccine">Tipo de biológico</label>
-                        <select class="tipeOfVaccine" id="tipeOfVaccine">
-                            <option value="0">Seleccionar</option>
-                            <option value="1">Pfizer</option>
-                            <option value="2">AstraZeneca</option>
-                            <option value="3">Janssen</option>
-                            <option value="4">Moderna</option>
-                            <option value="5">Sinovac</option>
-                        </select>
-                        <label for="tipeOfDose">Tipo de dosis</label>
-                        <select class="tipeOfDose" id="tipeOfDose">
-                            <option value="0">Seleccionar</option>
-                            <option value="1">Primera monodosis</option>
-                            <option value="2">Segunda monodosis</option>
-                            <option value="3">Dosis única</option>
-                        </select>
-                        <label for="placeVaccine">Lugar de vacunación</label>
-                        <input type="text" name="placeVaccine" id="placeVaccine">
+                        <div class="subdiv_vaccine">
+                            <div class="form-pairs">
+                                <label for="names" class="simpleLabel">Nombres</label>
+                                <input type="text" name="names" id="names">
+                            </div>
+                            <div class="form-pairs">
+                                <label for="lastNames" class="simpleLabel">Apellidos</label>
+                                <input type="text" name="lastNames" id="lastNames">
+                            </div>
+                        </div>
+                        <div class="subdiv_vaccine">
+                            <div class="form-pairs">
+                                <label for="tipeOfDocument" class="simpleLabel">Tipo de documento</label>
+                                <select class="tipeOfDocument" id="tipeOfDocument">
+                                    <option value="0">Seleccionar</option>
+                                    <option value="1">Tarjeta de identidad</option>
+                                    <option value="2">Cédula de ciudadanía</option>
+                                    <option value="3">Pasaporte</option>
+                                    <option value="4">Cédula de extranjería</option>
+                                    <option value="5">Registro civil</option>
+                                </select>
+                            </div>
+                            <div class="form-pairs">
+                                <label for="numberDocument" class="simpleLabel">Número de documento</label>
+                                <input type="number" name="numberDocument" id="numberDocument">
+                            </div>
+                        </div>
+                        <div class="subdiv_vaccine">
+                            <div class="form-pairs">
+                                <label for="DateDocument" class="simpleLabel">Fecha expedición del documento</label>
+                                <input type="date" name="DateDocument" id="DateDocument">
+                            </div>
+                            <div class="form-pairs">
+                                <label for="birthday" class="simpleLabel">Fecha de nacimiento</label>
+                                <input type="date" name="birthday" id="birthday">
+                            </div>
+                        </div>
+                        <div class="subdiv_vaccine">
+                            <div class="form-pairs">
+                                <label for="address" class="simpleLabel">Dirección</label>
+                                <input type="text" name="address" id="address">
+                            </div>
+                            <div class="form-pairs">
+                                <label for="eps" class="simpleLabel">EPS</label>
+                                <input type="text" name="eps" id="eps">
+                            </div>
+                        </div>
+                        <div class="subdiv_vaccine">
+                            <div class="form-pairs">
+                                <label for="age" class="simpleLabel">Edad</label>
+                                <input type="number" name="age" id="age">
+                            </div>
+                            <div class="form-pairs">
+                                <label for="dateVaccine" class="simpleLabel">Fecha de vacunación</label>
+                                <input type="date" name="birthday" id="birthday">
+                            </div>
+                        </div>
+                        <div class="subdiv_vaccine">
+                            <div class="form-pairs">
+                                <label for="tipeOfVaccine" class="simpleLabel">Tipo de biológico</label>
+                                <select class="tipeOfVaccine" id="tipeOfVaccine">
+                                    <option value="0">Seleccionar</option>
+                                    <option value="1">Pfizer</option>
+                                    <option value="2">AstraZeneca</option>
+                                    <option value="3">Janssen</option>
+                                    <option value="4">Moderna</option>
+                                    <option value="5">Sinovac</option>
+                                </select>
+                            </div>
+                            <div class="form-pairs">
+                                <label for="tipeOfDose" class="simpleLabel">Tipo de dosis</label>
+                                <select class="tipeOfDose" id="tipeOfDose">
+                                    <option value="0">Seleccionar</option>
+                                    <option value="1">Primera monodosis</option>
+                                    <option value="2">Segunda monodosis</option>
+                                    <option value="3">Dosis única</option>
+                                </select>
+                            </div>
+                            <div class="form-pairs">
+                                <label for="placeVaccine" class="simpleLabel">Lugar de vacunación</label>
+                                <input type="text" name="placeVaccine" id="placeVaccine">
+                            </div>
+                        </div>
                     </form>
                 </div>
 
@@ -85,8 +123,8 @@
                     <a href="pacientes.html"><button class="confirmar">Guardar</button></a>
                 </div>
 
-                <h3>La fecha de su siguiente dosis es:</h3>
                 <div class="dateNextVaccine">
+                    <h3>La fecha de su siguiente dosis es:</h3>
                     <p>17/07/2022</p>
                 </div>
             </div>

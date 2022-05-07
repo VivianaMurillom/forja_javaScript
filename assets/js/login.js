@@ -21,6 +21,3 @@ buttonLogin.addEventListener('click', enviar=(e)=>{
           })
     }
 });
-
-// Punto 2
-
