@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+    <title>Registro</title>
+</head>
+<body>
+
+    <header class="p-header">
+        <div class="p-1">
+            <img src="../assets/img/logoforja.png" alt="Logo Forja">
+            <div class="p-botones">
+                <a href="../index.html"><button><i class="fa-solid fa-house-user"></i></button></a>
+                <a href="dashboard.html"><button><i class="fa-solid fa-power-off"></i></button></a>
+            </div>
+        </div>
+        
+        <div class="p-division">
+            <img src="../assets/img/franja.svg" alt="division">
+        </div>
+
+    </header>
+
+    <main>
+        <section>
+
+            <div  class="r-section">
+                <h1 class="h1-important">Formulario de ingreso de vacunación</h1>
+
+                <div class="form-registro">
+                    <form action="post">
+                        <label for="names">Nombres</label>
+                        <input type="text" name="names" id="names">
+                        <label for="lastNames">Apellidos</label>
+                        <input type="text" name="lastNames" id="lastNames">
+                        <label for="tipeOfDocument">Tipo de documento</label>
+                        <select class="tipeOfDocument" id="tipeOfDocument">
+                            <option value="0">Seleccionar</option>
+                            <option value="1">Tarjeta de identidad</option>
+                            <option value="2">Cédula de ciudadanía</option>
+                            <option value="3">Pasaporte</option>
+                            <option value="4">Cédula de extranjería</option>
+                            <option value="5">Registro civil</option>
+                        </select>
+                        <label for="numberDocument">Número de documento</label>
+                        <input type="number" name="numberDocument" id="numberDocument">
+                        <label for="DateDocument">Fecha de expedición del documento</label>
+                        <input type="date" name="DateDocument" id="DateDocument">
+                        <label for="birthday">Fecha de nacimiento</label>
+                        <input type="date" name="birthday" id="birthday">
+                        <label for="address">Dirección</label>
+                        <input type="text" name="address" id="address">
+                        <label for="eps">EPS</label>
+                        <input type="text" name="eps" id="eps">
+                        <label for="age">Edad</label>
+                        <input type="number" name="age" id="age">
+                        <label for="dateVaccine">Fecha de vacunación</label>
+                        <input type="date" name="birthday" id="birthday">
+                        <label for="tipeOfVaccine">Tipo de biológico</label>
+                        <select class="tipeOfVaccine" id="tipeOfVaccine">
+                            <option value="0">Seleccionar</option>
+                            <option value="1">Pfizer</option>
+                            <option value="2">AstraZeneca</option>
+                            <option value="3">Janssen</option>
+                            <option value="4">Moderna</option>
+                            <option value="5">Sinovac</option>
+                        </select>
+                        <label for="tipeOfDose">Tipo de dosis</label>
+                        <select class="tipeOfDose" id="tipeOfDose">
+                            <option value="0">Seleccionar</option>
+                            <option value="1">Primera monodosis</option>
+                            <option value="2">Segunda monodosis</option>
+                            <option value="3">Dosis única</option>
+                        </select>
+                        <label for="placeVaccine">Lugar de vacunación</label>
+                        <input type="text" name="placeVaccine" id="placeVaccine">
+                    </form>
+                </div>
+
+                <div class="r-boton">
+                    <a href="pacientes.html"><button class="confirmar">Guardar</button></a>
+                </div>
+
+                <h3>La fecha de su siguiente dosis es:</h3>
+                <div class="dateNextVaccine">
+                    <p>17/07/2022</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&#9426 2021 Forja Empresas</p>
+    </footer>
+</body>
+<script src="https://kit.fontawesome.com/c887defe45.js" crossorigin="anonymous"></script>
+</html>

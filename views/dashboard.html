@@ -9,7 +9,7 @@
     <title>Dashboard</title>
 </head>
 <body>
-    <main>
+    <main id="main-dashboard">
         <section id="dashboard">
             <article class="opciones">
 
@@ -39,10 +39,10 @@
 
                     <form action="dashboard2.html">
                         <div class="ingresar1">
-                            <input type="text" placeholder="Digite el número de documento" required>
-                            <div class="formulario-botones">
-                                <a href="dashboard2.html"><i class="fa-solid fa-magnifying-glass"></i></a>
-                                <a href="dashboard.html"><i class="fa-solid fa-rotate-right"></i></a>
+                            <input type="text" name="document" id="document" placeholder="Digite el número de documento" required>
+                            <div class="formulario-botones"> 
+                                <button class="buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                <button class="refresh"><a href="dashboard.html"><i class="fa-solid fa-rotate-right"></i></a></button>
                             </div>
                         </div>
                     </form>
@@ -56,7 +56,129 @@
                 </div>
             </article>
         </section>
+
+        <section class="registro1">
+            <h3>La persona con el documento de identidad <span>52368795</span> registra la siguiente información:</h3>
+
+            <table class="table-vaccine">
+                <thead>
+                    <tr>
+                        <th>ítem</th>
+                        <th>Fecha registro</th>
+                        <th>Vacuna</th>
+                        <th>Fecha próxima vacuna</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-titulo="Ítem">1</td>
+                        <td data-titulo="Fecha registro">07/07/2021</td>
+                        <td data-titulo="Vacuna">Moderna</td>
+                        <td data-titulo="Fecha próxima vacuna">07/09/2021</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>Conforme lo anterior, le recomendamos pasar a su registro de vacunación en el siguiente enlace:</p>
+
+            <div class="buttons-popup">
+                <button class="close">Cerrar</i></button>
+                <button class="ingresoV">Ir al formulario de ingreso<i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+        </section>
+
+        <section class="registro2">
+            <h3>La persona con el documento de identidad <span>1001235478</span> registra la siguiente información:</h3>
+
+            <table class="table-vaccine">
+                <thead>
+                    <tr>
+                        <th>ítem</th>
+                        <th>Fecha registro</th>
+                        <th>Vacuna</th>
+                        <th>Fecha próxima vacuna</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-titulo="Ítem">1</td>
+                        <td data-titulo="Fecha registro">03/06/2021</td>
+                        <td data-titulo="Vacuna">AstraZeneca</td>
+                        <td data-titulo="Fecha próxima vacuna">03/08/2021</td>
+                    </tr>
+                    <tr>
+                        <td data-titulo="Ítem">2</td>
+                        <td data-titulo="Fecha registro">05/09/2021</td>
+                        <td data-titulo="Vacuna">AstraZeneca</td>
+                        <td data-titulo="Fecha próxima vacuna">05/11/2021</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>Conforme lo anterior le recomendamos pasar a su registro de vacunación en el siguiente enlace:</p>
+
+            <div class="buttons-popup">
+                <button class="close">Cerrar</i></button>
+                <button class="ingresoV">Ir al formulario de ingreso<i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+        </section>
+
+        <section class="registro3">
+            <h3>La persona con el documento de identidad <span>25413574</span> registra la siguiente información:</h3>
+
+            <table class="table-vaccine">
+                <thead>
+                    <tr>
+                        <th>ítem</th>
+                        <th>Fecha registro</th>
+                        <th>Vacuna</th>
+                        <th>Fecha próxima vacuna</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-titulo="Ítem">1</td>
+                        <td data-titulo="Fecha registro">15/04/2021</td>
+                        <td data-titulo="Vacuna">Sinovac</td>
+                        <td data-titulo="Fecha próxima vacuna">15/06/2021</td>
+                    </tr>
+                    <tr>
+                        <td data-titulo="Ítem">2</td>
+                        <td data-titulo="Fecha registro">15/06/2021</td>
+                        <td data-titulo="Vacuna">Sinovac</td>
+                        <td data-titulo="Fecha próxima vacuna">15/08/2021</td>
+                    </tr>
+
+                    <tr>
+                        <td data-titulo="Ítem">3</td>
+                        <td data-titulo="Fecha registro">15/08/2021</td>
+                        <td data-titulo="Vacuna">Pfizer</td>
+                        <td data-titulo="Fecha próxima vacuna"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>Conforme lo anterior le informamos que usted tiene las dosis dispuestas por el gobierno nacional al día.</p>
+            <h3 class="felicidades">¡Felicidades!</h3>
+
+            <div class="buttons-popup">
+                <button class="close">Cerrar</i></button>
+            </div>
+        </section>
+
+        <section class="registro4">
+            <h3>La persona con el documento de identidad <span>1007203506</span> no registra historial de vacunación.</h3>
+
+            <p>Conforme lo anterior le recomendamos pasar a su registro como usuario nuevo en el siguiente enlace:</p>
+
+            <div class="buttons-popup">
+                <button class="close">Cerrar</i></button>
+                <button class="ingresoN">Ir al formulario <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+        </section>
+
     </main>
+    <script src="../assets/js/project.js"></script>
+    <script src="https://kit.fontawesome.com/c887defe45.js" crossorigin="anonymous"></script>
 </body>
-<script src="https://kit.fontawesome.com/c887defe45.js" crossorigin="anonymous"></script>
 </html>

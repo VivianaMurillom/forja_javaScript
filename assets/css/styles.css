@@ -491,6 +491,9 @@ form {
 }
 
 /* dashboard.html*/
+#main-dashboard{
+    height: 100vh;
+}
 
 #dashboard {
     display: flex;
@@ -631,6 +634,12 @@ form {
     padding: .4rem .6rem;
 }
 
+.buscar, .refresh{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
 .b-fondo {
     align-items: flex-end;
     display: flex;
@@ -649,87 +658,66 @@ form {
     margin: 1rem 0;
 }
 
-/* dashboard2.html*/
+/* Registro de vacunas*/
 
-#b-confirmacion {
-    align-items: center;
-    background-color: var(--gray-color);
-    display: flex;
+.registro1, .registro2, .registro3, .registro4{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.active{
+    background-color: rgba(255, 254, 254, .9);
+    display:flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 2rem;
+    opacity: 1;
+    padding: .5rem;
+    position:relative;
+    text-align: center;
+    top: -500px;
+    visibility: visible;
 }
 
-.cuadro {
-    background-color: white;
-    border: 1px solid var(--gray-color);
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 5rem;
-    padding: 2rem;
+.registro1 span, .registro2 span, .registro3 span, .registro4 span{
+    color: var(--orange-color);
 }
 
-.cuadro h2 {
-    color: var(--darkblue-color);
-}
-
-.info-cuadro{
-    animation: zoomrotate 4s 1;
+.registro1 p, .registro2 p, .registro3 p, .registro4 p{
     text-align: center;
 }
 
-@keyframes zoomrotate {
-    20% {
-        transform: scale(.9);
-        rotate: (-6deg);
-    }
-
-    30%, 70% {
-        transform: scale(1);
-        rotate: (6deg);
-    }
-
-    50%, 90% {
-        transform: scale(1);
-        rotate: (-6deg);
-    }
-}
-
-.c-botones {
+.buttons-popup{
     display: flex;
-    justify-content: center;
+    flex-direction: column-reverse;
 }
 
-.confirmar {
+.ingresoV, .ingresoN{
     background-color: var(--orange-color);
-    border: 1px solid var(--gray-color);
-    border-radius: 5px;
-    color: white;
-    margin: .5rem;
-    padding: .5rem 1rem;
-}
-
-.confirmar:hover {
-    background-color: var(--darkblue-color);
     border: 1px solid var(--orange-color);
-    transition: all 1s;
-}
-
-.cancelar {
-    background-color: var(--darkblue-color);
-    border: 1px solid var(--gray-color);
     border-radius: 5px;
     color: white;
-    margin: .5rem;
-    padding: .5rem 1rem;
+    margin: .5rem auto;
+    max-width: 250px;
+    padding: .3rem .5rem;
+    text-align: center;
 }
 
-.cancelar:hover {
-    background-color: var(--orange-color);
-    border: 1px solid var(--darkblue-color);
-    transition: all 1s;
+.ingresoV i{
+    margin: .3rem;
+}
+
+.felicidades{
+    color: var(--orange-color);
+}
+
+.close{
+    background-color: var(--gray-color);
+    border: 1px solid var(--orange-color);
+    border-radius: 5px;
+    color: black;
+    margin: .5rem auto;
+    max-width: 100px;
+    padding: .3rem;
 }
 
 /* Pacientes.html*/
@@ -935,7 +923,7 @@ table td[data-titulo]::before {
     padding: 2rem;
 }
 
-.form-registro input, .form-registro select, .form-registro::placeholder {
+.form-registro input, .form-registro select, .form-registro::placeholder{
     color: grey;
     border: 1px solid var(--blue-color);
     border-radius: 5px;
@@ -1067,6 +1055,12 @@ table td[data-titulo]::before {
         margin-left: 420px;
     }
 
+    /* Registro de vacunas*/
+
+    .table-vaccine{
+        margin: 1rem auto;
+    }
+
     /* Pacientes.html*/
 
     table {
@@ -1135,19 +1129,45 @@ table td[data-titulo]::before {
     #dashboard {
         display: flex;
         flex-direction: row;
+        height: 100vh;
         margin: 0;
+        width: 100%;
     }
 
     .opciones {
         background-color: #181926;
         display: flex;
         flex-direction: column;
+        height: 100vh;
         justify-content: center;
         padding: .5rem;
     }
 
+    .bienvenida{
+        height: 100vh;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .i-form{
+        margin-top: 0;
+    }
+
     .w-user {
-        margin-left: 700px;
+        margin-left:690px;
+    }
+
+    /* Registro de vacunas*/
+
+    .active{
+        border-radius: 5px;
+        left: 150px;
+        margin: auto;
+        max-width: 800px;
+        padding: 1rem;
+        right: 150px;
     }
 
     /* Pacientes.html*/
@@ -1246,5 +1266,12 @@ table td[data-titulo]::before {
     .form-part4 input, .form-part4 select{
         width: 100%;
     }
+}
 
+/*Resolución macro*/
+@media screen and (min-width: 1200px) {
+    body{
+        margin: 0 auto;
+        max-width: 1440px;
+    }
 }
