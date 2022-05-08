@@ -973,9 +973,10 @@ table td[data-titulo]::before {
     color: grey;
     border: 1px solid var(--blue-color);
     border-radius: 5px;
+    margin: .5rem 0;
 }
 
-.r-labels {
+.second-title {
     align-items: center;
     background-color: var(--blue-color);
     border: 1px solid var(--darkblue-color);
@@ -990,7 +991,7 @@ table td[data-titulo]::before {
     width: 100%;
 }
 
-.r-labels i {
+.second-title i {
     align-items: flex-start;
     color: black;
     display: flex;
@@ -1000,7 +1001,7 @@ table td[data-titulo]::before {
     width: 20px;
 }
 
-#sub-h1 {
+#form-subtitle {
     font-size: 20px;
     font-weight: 100;
     margin: 0;
@@ -1008,37 +1009,37 @@ table td[data-titulo]::before {
     position: static;
 }
 
-.form-part1 {
+.form-first-division {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
 }
 
-.form-part1 input {
+.form-first-division input {
     margin: .4rem;
     min-height: 30px;
     width: 100%;
 }
 
-.form-part2, .form-part3 {
+.form-second-division, .form-third-division {
     display: flex;
     flex-direction:column;
     width: 100%;
 }
 
-.subdiv {
+.form-little-division {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
 }
 
-.subdiv input, .subdiv select {
+.form-little-division input, .form-little-division select {
     min-height: 30px;
     width: 100%;
 }
 
-.form-part4 input, .form-part4 select{
+.form-fourth-division input, .form-fourth-division select{
     min-height: 30px;
     width: 100%;
 }
@@ -1319,30 +1320,37 @@ table td[data-titulo]::before {
         width: 100%;
     }
 
-     .form-part1 {
+     .form-first-division {
         flex-direction: row;
         justify-content: flex-start;
         width: 100%;
     }
 
-    .form-part1 input {
+    .form-first-division input {
         width: 200px;
     }
     
-    .form-part4{
+    .form-fourth-division{
         display: flex;
     }
 
-    .subdiv {
+    .form-little-division {
         flex-flow: row wrap;
     }
 
-    .subdiv input, .subdiv select {
+    .form-little-division input, .form-little-division select {
         width: 45%;
     }
 
-    .form-part4 input, .form-part4 select{
+    .form-fourth-division select, .form-fourth-division input{
+        margin: 0 .5rem;
+        max-height: 31px;
+        justify-content: center;
         width: 100%;
+    }
+
+    .selector input{
+        margin: 0 .5rem;
     }
 }
 

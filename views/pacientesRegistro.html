@@ -10,16 +10,16 @@
 </head>
 <body>
 
-    <header class="p-header">
-        <div class="p-1">
+    <header class="background-header">
+        <div class="background-part">
             <img src="../assets/img/logoforja.png" alt="Logo Forja">
-            <div class="p-botones">
-                <a href="../index.html"><button><i class="fa-solid fa-house-user"></i></button></a>
-                <a href="dashboard.html"><button><i class="fa-solid fa-power-off"></i></button></a>
+            <div class="background-buttons">
+                <a href="dashboard.html"><button><i class="fa-solid fa-house-user"></i></button></a>
+                <a href="login.html"><button><i class="fa-solid fa-power-off"></i></button></a>
             </div>
         </div>
         
-        <div class="p-division">
+        <div class="background-division">
             <img src="../assets/img/franja.svg" alt="division">
         </div>
 
@@ -27,28 +27,27 @@
 
     <main>
         <section>
+            <div  class="section-part">
+                <h1 class="important-title">Registro Usuario Nuevo</h1>
 
-            <div  class="r-section">
-                <h1 class="h1-important">Registro Usuario Nuevo</h1>
-
-                <div class="form-registro">
+                <div class="form-register">
                     <form action="post">
-                        <div class="form-part1">
+                        <div class="form-first-division">
                             <input type="date" name="fecha" id="fecha">
                             <input type="number" name="idform" id="idform" placeholder="N Registro">
                         </div>
 
-                        <div class="r-labels">
+                        <div class="second-title">
                             <i class="fa-solid fa-user"></i>
-                            <h1 id="sub-h1">Datos del Paciente</h1>
+                            <h1 id="form-subtitle">Datos del Paciente</h1>
                         </div>
 
-                        <div class="form-part2">
-                            <div class="subdiv">
+                        <div class="form-second-division">
+                            <div class="form-little-division">
                                 <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
                                 <input type="text" name="apellido" id="apellido" placeholder="Apellidos">
                             </div>
-                            <div class="subdiv">
+                            <div class="form-little-division">
                                 <input type="number" name="identificacion" id="identificacion" placeholder="Número de identificación">
                                 <select name="tipo-id" id="tipo-id">
                                     <option value="0">Seleccione el tipo de documento</option>
@@ -58,19 +57,19 @@
                                     <option value="4">Pasaporte</option>
                                 </select>
                             </div>
-                            <div class="subdiv">
+                            <div class="form-little-division">
                                 <input type="date" name="nacimiento" id="nacimiento">
                                 <input type="number" name="edad" id="edad" placeholder="Edad">
                             </div>
                         </div>
 
-                        <div class="r-labels">
+                        <div class="second-title">
                             <i class="fa-solid fa-location-dot"></i>
-                            <h1 id="sub-h1">Información de contacto</h1>
+                            <h1 id="form-subtitle">Información de contacto</h1>
                         </div>
 
-                        <div class="form-part3">
-                            <div class="subdiv">
+                        <div class="form-third-division">
+                            <div class="form-little-division">
                                 <select class="form-control" id="departamento" name="departamento">
                                     <option value = "">Departamento de residencia</option>
                                     <option value = "Amazonas">Amazonas</option>
@@ -144,23 +143,23 @@
                                 </select>
                             </div>
 
-                            <div class="subdiv">
+                            <div class="form-little-division">
                                 <input type="text" name="direccion" id="direccion" placeholder="Dirección">
                                 <input type="email" name="correo" id="correo" placeholder="Correo">
                             </div>
 
-                            <div class="subdiv">
+                            <div class="form-little-division">
                                 <input type="number" name="fijo" id="fijo" placeholder="Télefono fijo">
                                 <input type="number" name="celular" id="celular" placeholder="Celular">
                             </div>
                         </div>
 
-                        <div class="r-labels">
+                        <div class="second-title">
                             <i class="fa-solid fa-heart-pulse"></i>
-                            <h1 id="sub-h1">Estado de salud</h1>
+                            <h1 id="form-subtitle">Estado de salud</h1>
                         </div>
 
-                        <div class="form-part4">
+                        <div class="form-fourth-division">
                             <select class="preexistencias" id="preexistencias">
                                 <option value="">Preexistencias</option>
                                 <option value="EPOC">Enfermedad pulmonar obstructiva crónica</option>
@@ -185,7 +184,7 @@
                             <input type="text" name="alergias" id="alergias" placeholder="Alergias">
                         </div>
 
-                        <div class="form-part5">
+                        <div class="form-fifth-division">
                             <p>¿El paciente se ha realizado la prueba del COVID-19 con anterioridad y esta le ha salido positiva?</p>
                             <div class="selector">
                                 <input type="radio" name="prubac" id="pruebac">Sí
@@ -201,7 +200,7 @@
                     </form>
                 </div>
 
-                <div class="r-boton">
+                <div class="button-confirm">
                     <a href="pacientes.html"><button class="confirmar">Guardar</button></a>
                 </div>
             </div>
