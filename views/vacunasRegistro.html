@@ -10,16 +10,16 @@
 </head>
 <body>
 
-    <header class="p-header">
-        <div class="p-1">
+    <header class="background-header">
+        <div class="background-part">
             <img src="../assets/img/logoforja.png" alt="Logo Forja">
-            <div class="p-botones">
+            <div class="background-buttons">
                 <a href="../views/login.html"><button><i class="fa-solid fa-house-user"></i></button></a>
                 <a href="dashboard.html"><button><i class="fa-solid fa-power-off"></i></button></a>
             </div>
         </div>
         
-        <div class="p-division">
+        <div class="background-division">
             <img src="../assets/img/franja.svg" alt="division">
         </div>
 
@@ -27,13 +27,12 @@
 
     <main>
         <section>
+            <div class="section-part">
+                <h1 class="important-title">Formulario de ingreso de vacunación</h1>
 
-            <div  class="r-section">
-                <h1 class="h1-important">Formulario de ingreso de vacunación</h1>
-
-                <div class="form-registro vaccine">
+                <div class="form-register vaccine">
                     <form action="post">
-                        <div class="subdiv_vaccine">
+                        <div class="form-vaccine">
                             <div class="form-pairs">
                                 <label for="names" class="simpleLabel">Nombres</label>
                                 <input type="text" name="names" id="names">
@@ -43,7 +42,7 @@
                                 <input type="text" name="lastNames" id="lastNames">
                             </div>
                         </div>
-                        <div class="subdiv_vaccine">
+                        <div class="form-vaccine">
                             <div class="form-pairs">
                                 <label for="tipeOfDocument" class="simpleLabel">Tipo de documento</label>
                                 <select class="tipeOfDocument" id="tipeOfDocument">
@@ -60,7 +59,7 @@
                                 <input type="number" name="numberDocument" id="numberDocument">
                             </div>
                         </div>
-                        <div class="subdiv_vaccine">
+                        <div class="form-vaccine">
                             <div class="form-pairs">
                                 <label for="DateDocument" class="simpleLabel">Fecha expedición del documento</label>
                                 <input type="date" name="DateDocument" id="DateDocument">
@@ -70,7 +69,7 @@
                                 <input type="date" name="birthday" id="birthday">
                             </div>
                         </div>
-                        <div class="subdiv_vaccine">
+                        <div class="form-vaccine">
                             <div class="form-pairs">
                                 <label for="address" class="simpleLabel">Dirección</label>
                                 <input type="text" name="address" id="address">
@@ -80,7 +79,7 @@
                                 <input type="text" name="eps" id="eps">
                             </div>
                         </div>
-                        <div class="subdiv_vaccine">
+                        <div class="form-vaccine">
                             <div class="form-pairs">
                                 <label for="age" class="simpleLabel">Edad</label>
                                 <input type="number" name="age" id="age">
@@ -90,7 +89,7 @@
                                 <input type="date" name="birthday" id="birthday">
                             </div>
                         </div>
-                        <div class="subdiv_vaccine">
+                        <div class="form-vaccine">
                             <div class="form-pairs">
                                 <label for="tipeOfVaccine" class="simpleLabel">Tipo de biológico</label>
                                 <select class="tipeOfVaccine" id="tipeOfVaccine">
@@ -119,7 +118,7 @@
                     </form>
                 </div>
 
-                <div class="r-boton">
+                <div class="button-confirm">
                     <a href="pacientes.html"><button class="confirmar">Guardar</button></a>
                 </div>
 
@@ -134,6 +133,6 @@
     <footer>
         <p>&#9426 2021 Forja Empresas</p>
     </footer>
+    <script src="https://kit.fontawesome.com/c887defe45.js" crossorigin="anonymous"></script>
 </body>
-<script src="https://kit.fontawesome.com/c887defe45.js" crossorigin="anonymous"></script>
 </html>
