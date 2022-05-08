@@ -39,11 +39,13 @@
 
                     <form action="dashboard2.html">
                         <div class="ingresar1">
-                            <input type="number" name="document" id="document" placeholder="Digite el número de documento" required>
-                            <div class="formulario-botones"> 
-                                <button class="buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
-                                <button class="refresh"><a href="dashboard.html"><i class="fa-solid fa-rotate-right"></i></a></button>
-                            </div>
+                            <form action="" method="post">
+                                <input type="number" name="document" id="document" placeholder="Digite el número de documento" required>
+                                <div class="formulario-botones"> 
+                                    <button class="buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                    <button class="refresh"><a href="dashboard.html"><i class="fa-solid fa-rotate-right"></i></a></button>
+                                </div>
+                            </form>
                         </div>
                     </form>
                 </div>
@@ -82,8 +84,8 @@
             <p>Conforme lo anterior, le recomendamos pasar a su registro de vacunación en el siguiente enlace:</p>
 
             <div class="buttons-popup">
-                <button class="close">Cerrar</i></button>
-                <button class="ingresoV">Ir al formulario de ingreso<i class="fa-solid fa-arrow-right-long"></i></button>
+                <button class="close"><a href="dashboard.html">Cerrar</a></button>
+                <button class="ingresoV"><a href="vacunasRegistro.html">Ir al formulario de ingreso<i class="fa-solid fa-arrow-right-long"></i></a></button>
             </div>
         </section>
 

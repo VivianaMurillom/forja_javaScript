@@ -692,6 +692,15 @@ form {
     text-align: center;
 }
 
+.ingresoV:hover, .ingresoN:hover{
+    background-color: white;
+    border: 1px solid var(--orange-color);
+}
+
+.ingresoV a:hover, .ingresoN a:hover{
+    color: var(--orange-color);
+}
+
 .ingresoV i{
     margin: .3rem;
 }
@@ -704,10 +713,22 @@ form {
     background-color: var(--gray-color);
     border: 1px solid var(--orange-color);
     border-radius: 5px;
-    color: black;
     margin: .5rem auto;
     max-width: 100px;
     padding: .3rem;
+}
+
+.close a{
+    color: black;
+}
+
+.close:hover{
+    background-color: var(--orange-color);
+    border: 1px solid var(--gray-color);
+}
+
+.close a:hover{
+    color: white;
 }
 
 /* Formulario de vacunas*/
@@ -1223,12 +1244,23 @@ table td[data-titulo]::before {
     /* Registro de vacunas*/
 
     .active{
+        animation: show 1s .5s backwards;
         border-radius: 5px;
         left: 150px;
         margin: auto;
         max-width: 800px;
         padding: 1rem;
         right: 150px;
+    }
+
+    @keyframes show {
+        0%{
+            transform: translateY(-150vh);
+        }
+    
+        100%{
+            transform: translateY(0);
+        }
     }
 
     /* Pacientes.html*/
