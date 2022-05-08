@@ -491,7 +491,7 @@ form {
     margin: 0;
 }
 
-.opciones {
+.options {
     background-color: #181926;
     display: flex;
     flex-direction: column;
@@ -499,13 +499,13 @@ form {
     padding: .5rem;
 }
 
-.i-form {
+.welcome-form {
     align-items: center;
     display: flex;
     flex-direction: column;
 }
 
-.w-user{
+.welcome-user{
     align-items: center;
     background-color: var(--gray-color);
     border-radius: 5px;
@@ -516,7 +516,7 @@ form {
     width: 200px;
 }
 
-.w-user i {
+.welcome-user i {
     background-color: white;
     border: 2px solid var(--orange-color);
     border-radius: 50%;
@@ -524,27 +524,27 @@ form {
     padding: .5rem;
 }
 
-.titulo {
+.welcome-title {
     color: var(--orange-color);
     display: flex;
     justify-content: center;
     text-transform: uppercase;
 }
 
-.o-img img {
+.options-img img {
     align-items: flex-start;
     justify-content: center;
     margin: 2rem 0;
     width: 100%;
 }
 
-.o-opciones {
+.options-section {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.o-item {
+.options-item {
     align-items: center;
     background-color: var(--gray-color);
     border: 3px solid  var(--orange-color);
@@ -560,7 +560,7 @@ form {
     padding: .2rem;
 }
 
-.o-item:hover{
+.options-item:hover{
     animation: zoomrotate 6s 1;
 }
 
@@ -581,15 +581,15 @@ form {
     }
 }
 
-.o-item i{
+.options-item i{
     margin-right: .5rem;
 }
 
-.o-item a {
+.options-item a {
     color: #181926;
 }
 
-.bienvenida {
+.welcome {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -597,26 +597,26 @@ form {
     width: 100%;
 }
 
-.ingresar1 {
+.search-document {
     display: flex;
     flex-direction: column;
 }
 
-.formulario-botones {
+.search-buttons {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: 1rem;
 }
 
-.ingresar1 input {
+.search-document input {
     outline: 0;
     border-width: 0 0 2px;
     border-color: var(--darkblue-color);
     width: 300px;
 }
 
-.ingresar1 i {
+.search-document i {
     background-color: var(--darkblue-color);
     border: 2px solid var(--blue-color);
     border-radius: 5px;
@@ -624,20 +624,20 @@ form {
     padding: .4rem .6rem;
 }
 
-.buscar, .refresh{
+.search, .refresh{
     background-color: white;
     border: none;
     cursor: pointer;
 }
 
-.b-fondo {
+.welcome-background {
     align-items: flex-end;
     display: flex;
     justify-content: flex-end;
     margin: 1rem;
 }
 
-.b-fondo img {
+.welcome-background img {
     max-width: 330px;
     max-height: 330px;
     width: 90%;
@@ -650,7 +650,7 @@ form {
 
 /* Registro de vacunas*/
 
-.registro1, .registro2, .registro3, .registro4{
+.first-document, .second-document, .third-document, .fourth-document{
     display: none;
     visibility: hidden;
     opacity: 0;
@@ -668,11 +668,11 @@ form {
     visibility: visible;
 }
 
-.registro1 span, .registro2 span, .registro3 span, .registro4 span{
+.first-document span, .second-document span, .third-document span, .fourth-document span{
     color: var(--orange-color);
 }
 
-.registro1 p, .registro2 p, .registro3 p, .registro4 p{
+.first-document p, .second-document p, .third-document p, .fourth-document p{
     text-align: center;
 }
 
@@ -681,7 +681,7 @@ form {
     flex-direction: column-reverse;
 }
 
-.ingresoV, .ingresoN{
+.btn-form-vaccine, .btn-new-user{
     background-color: var(--orange-color);
     border: 1px solid var(--orange-color);
     border-radius: 5px;
@@ -692,20 +692,20 @@ form {
     text-align: center;
 }
 
-.ingresoV:hover, .ingresoN:hover{
+.btn-form-vaccine:hover, .btn-new-user:hover{
     background-color: white;
     border: 1px solid var(--orange-color);
 }
 
-.ingresoV a:hover, .ingresoN a:hover{
+.btn-form-vaccine a:hover, .btn-new-user a:hover{
     color: var(--orange-color);
 }
 
-.ingresoV i{
+.btn-form-vaccine i{
     margin: .3rem;
 }
 
-.felicidades{
+.congratulations{
     color: var(--orange-color);
 }
 
@@ -1089,22 +1089,22 @@ table td[data-titulo]::before {
  @media screen and (min-width: 768px) {
      /* dashboard.html*/
 
-     .opciones {
+     .options {
         display: flex;
         flex-direction: row;
         justify-content:space-around;
     }
 
-    .o-img {
+    .options-img {
         align-items: center;
         display: flex;
     }
 
-    .o-img img {
+    .options-img img {
         max-height: 75px;
     }
 
-    .w-user{
+    .welcome-user{
         margin-left: 420px;
     }
 
@@ -1216,7 +1216,7 @@ table td[data-titulo]::before {
         width: 100%;
     }
 
-    .opciones {
+    .options {
         background-color: #181926;
         display: flex;
         flex-direction: column;
@@ -1225,7 +1225,7 @@ table td[data-titulo]::before {
         padding: .5rem;
     }
 
-    .bienvenida{
+    .welcome{
         height: 100vh;
         justify-content: space-between;
         margin: 0;
@@ -1233,11 +1233,11 @@ table td[data-titulo]::before {
         width: 100%;
     }
 
-    .i-form{
+    .welcome-form{
         margin-top: 0;
     }
 
-    .w-user {
+    .welcome-user {
         margin-left:690px;
     }
 

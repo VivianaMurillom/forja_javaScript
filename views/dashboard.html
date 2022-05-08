@@ -11,38 +11,37 @@
 <body>
     <main id="main-dashboard">
         <section id="dashboard">
-            <article class="opciones">
+            <article class="options">
 
-                <div class="o-img">
+                <div class="options-img">
                     <img src="../assets/img/logoforja.png" alt="Logo Forja">
                 </div>
 
-                <div class="o-opciones">
-                    <button class="o-item"><a href="pacientes.html"><i class="fa-solid fa-users"></i>Pacientes</a></button>
-                    <button class="o-item"><a href="vacunasRegistro.html"><i class="fa-solid fa-syringe"></i>Vacunación</a></button>
-                    <button class="o-item"><a href="login.html"><i class="fa-solid fa-power-off"></i>Cerrar sesión</a></button>
+                <div class="options-section">
+                    <button class="options-item"><a href="pacientes.html"><i class="fa-solid fa-users"></i>Pacientes</a></button>
+                    <button class="options-item"><a href="vacunasRegistro.html"><i class="fa-solid fa-syringe"></i>Vacunación</a></button>
+                    <button class="options-item"><a href="login.html"><i class="fa-solid fa-power-off"></i>Cerrar sesión</a></button>
                 </div>
             </article>
 
-            <article class="bienvenida">
-                
-                <div class="i-form"> 
+            <article class="welcome">
+                <div class="welcome-form"> 
 
-                    <div class="w-user">
+                    <div class="welcome-user">
                         <i class="fa-solid fa-user"></i>
                         <p>Carolina Loaiza</p>
                     </div>
 
-                    <div class="titulo">
+                    <div class="welcome-title">
                         <h1>Bienvenidos</h1>
                     </div>
 
                     <form action="dashboard2.html">
-                        <div class="ingresar1">
+                        <div class="search-document">
                             <form action="" method="post">
                                 <input type="number" name="document" id="document" placeholder="Digite el número de documento" required>
-                                <div class="formulario-botones"> 
-                                    <button class="buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                <div class="search-buttons"> 
+                                    <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
                                     <button class="refresh"><a href="dashboard.html"><i class="fa-solid fa-rotate-right"></i></a></button>
                                 </div>
                             </form>
@@ -50,7 +49,7 @@
                     </form>
                 </div>
 
-                <div class="b-fondo">
+                <div class="welcome-background">
                     <img src="../assets/img/guerreros.png" alt="Imagen de fondo">
                 </div>
                 <div id="division">
@@ -59,7 +58,7 @@
             </article>
         </section>
 
-        <section class="registro1">
+        <section class="first-document">
             <h3>La persona con el documento de identidad <span>52368795</span> registra la siguiente información:</h3>
 
             <table class="table-vaccine">
@@ -85,11 +84,11 @@
 
             <div class="buttons-popup">
                 <button class="close"><a href="dashboard.html">Cerrar</a></button>
-                <button class="ingresoV"><a href="vacunasRegistro.html">Ir al formulario de ingreso<i class="fa-solid fa-arrow-right-long"></i></a></button>
+                <button class="btn-form-vaccine"><a href="vacunasRegistro.html">Ir al formulario de ingreso<i class="fa-solid fa-arrow-right-long"></i></a></button>
             </div>
         </section>
 
-        <section class="registro2">
+        <section class="second-document">
             <h3>La persona con el documento de identidad <span>1001235478</span> registra la siguiente información:</h3>
 
             <table class="table-vaccine">
@@ -120,12 +119,12 @@
             <p>Conforme lo anterior le recomendamos pasar a su registro de vacunación en el siguiente enlace:</p>
 
             <div class="buttons-popup">
-                <button class="close">Cerrar</i></button>
-                <button class="ingresoV">Ir al formulario de ingreso<i class="fa-solid fa-arrow-right-long"></i></button>
+                <button class="close"><a href="dashboard.html">Cerrar</a></button>
+                <button class="btn-form-vaccine"><a href="vacunasRegistro.html">Ir al formulario de ingreso<i class="fa-solid fa-arrow-right-long"></i></a></button>
             </div>
         </section>
 
-        <section class="registro3">
+        <section class="third-document">
             <h3>La persona con el documento de identidad <span>25413574</span> registra la siguiente información:</h3>
 
             <table class="table-vaccine">
@@ -161,21 +160,21 @@
             </table>
 
             <p>Conforme lo anterior le informamos que usted tiene las dosis dispuestas por el gobierno nacional al día.</p>
-            <h3 class="felicidades">¡Felicidades!</h3>
+            <h3 class="congratulations">¡Felicidades!</h3>
 
             <div class="buttons-popup">
-                <button class="close">Cerrar</i></button>
+                <button class="close"><a href="dashboard.html">Cerrar</a></button>
             </div>
         </section>
 
-        <section class="registro4">
+        <section class="fourth-document">
             <h3>La persona con el documento de identidad <span>1007203506</span> no registra historial de vacunación.</h3>
 
             <p>Conforme lo anterior le recomendamos pasar a su registro como usuario nuevo en el siguiente enlace:</p>
 
             <div class="buttons-popup">
-                <button class="close">Cerrar</i></button>
-                <button class="ingresoN">Ir al formulario <i class="fa-solid fa-arrow-right-long"></i></button>
+                <button class="close"><a href="dashboard.html">Cerrar</a></button>
+                <button class="btn-new-user"><a href="pacientesRegistro.html">Ir al formulario <i class="fa-solid fa-arrow-right-long"></i></a></button>
             </div>
         </section>
 
