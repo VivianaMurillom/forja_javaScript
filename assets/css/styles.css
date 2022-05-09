@@ -181,12 +181,12 @@ header {
     justify-content: flex-start;
 }
 
-.first-title {
+.first-title-index {
     color: var(--orange-color);
     font-weight: 300;
 } 
 
-.second-title {
+.second-title-index {
     font-weight: 300;
     text-align: center;
 }
@@ -827,6 +827,21 @@ form {
 
 .patient-section i {
     padding: .2rem;
+}
+
+.btn-confirm-patient{
+    background-color: var(--orange-color);
+    border: 1px solid var(--gray-color);
+    border-radius: 5px;
+    color: white;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.btn-confirm-patient:hover{
+    background-color: var(--darkblue-color);
+    border: 1px solid var(--orange-color);
+    transition: all 1s;
 }
 
 .patient-form{
