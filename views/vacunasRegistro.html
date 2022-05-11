@@ -26,109 +26,137 @@
     </header>
 
     <main>
-        <button class="back"><a href="dashboard.html">Volver atrás</a></button>
+        <div class="buttons-vaccine">
+            <a href="pacientes.html" class="btn-confirm-vaccine">Guardar cambios</a>
+            <a href="dashboard.html" class="btn-back-vaccine">Cerrar</a>
+        </div>
+        
+        <div class="vaccineTittles">
+            <p>ESTADO: <span>Activo</span></p>
+            <h4>INFORMACIÓN DEL PACIENTE</h4>
+        </div>
 
-        <section>
-            <div class="section-part">
-                <h1 class="important-title">Formulario de ingreso de vacunación</h1>
-
-                <div class="form-register vaccine">
+        <section class="section-form-vaccine">
                     <form action="post">
-                        <div class="form-vaccine">
-                            <div class="form-pairs">
-                                <label for="names" class="simpleLabel">Nombres</label>
-                                <input type="text" name="names" id="names">
+                        <div class="form-register vaccine">
+                            <div class="form-vaccine">
+                                <div class="form-pairs">
+                                    <input type="date" name="simpleDate" id="simpleDate">
+                                    <input type="number" name="registerNumber" id="registerNumber" placeholder="Número de registro">
+                                </div>
                             </div>
-                            <div class="form-pairs">
-                                <label for="lastNames" class="simpleLabel">Apellidos</label>
-                                <input type="text" name="lastNames" id="lastNames">
+                            <div class="second-title">
+                                <i class="fa-solid fa-syringe"></i>
+                                <h1 id="form-subtitle">Datos personales</h1>
                             </div>
-                        </div>
-                        <div class="form-vaccine">
-                            <div class="form-pairs">
-                                <label for="tipeOfDocument" class="simpleLabel">Tipo de documento</label>
-                                <select class="tipeOfDocument" id="tipeOfDocument">
-                                    <option value="0">Seleccionar</option>
-                                    <option value="1">Tarjeta de identidad</option>
-                                    <option value="2">Cédula de ciudadanía</option>
-                                    <option value="3">Pasaporte</option>
-                                    <option value="4">Cédula de extranjería</option>
-                                    <option value="5">Registro civil</option>
-                                </select>
+                            <div class="form-vaccine">
+                                <div class="form-pairs">
+                                    <input type="text" name="names" id="names" placeholder="Nombres">
+                                    <input type="text" name="lastNames" id="lastNames" placeholder="Apellidos">
+                                </div>
                             </div>
-                            <div class="form-pairs">
-                                <label for="numberDocument" class="simpleLabel">Número de documento</label>
-                                <input type="number" name="numberDocument" id="numberDocument">
+                            <div class="form-vaccine">
+                                <div class="form-pairs">
+                                    <input type="number" name="numberDocument" id="numberDocument" placeholder="Número de identificación">
+                                    <input type="date" name="DateDocument" id="DateDocument">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-vaccine">
-                            <div class="form-pairs">
-                                <label for="DateDocument" class="simpleLabel">Fecha expedición del documento</label>
-                                <input type="date" name="DateDocument" id="DateDocument">
-                            </div>
-                            <div class="form-pairs">
-                                <label for="birthday" class="simpleLabel">Fecha de nacimiento</label>
-                                <input type="date" name="birthday" id="birthday">
-                            </div>
-                        </div>
-                        <div class="form-vaccine">
-                            <div class="form-pairs">
-                                <label for="address" class="simpleLabel">Dirección</label>
-                                <input type="text" name="address" id="address">
-                            </div>
-                            <div class="form-pairs">
-                                <label for="eps" class="simpleLabel">EPS</label>
-                                <input type="text" name="eps" id="eps">
-                            </div>
-                        </div>
-                        <div class="form-vaccine">
-                            <div class="form-pairs">
-                                <label for="age" class="simpleLabel">Edad</label>
-                                <input type="number" name="age" id="age">
-                            </div>
-                            <div class="form-pairs">
-                                <label for="dateVaccine" class="simpleLabel">Fecha de vacunación</label>
-                                <input type="date" name="birthday" id="birthday">
-                            </div>
-                        </div>
-                        <div class="form-vaccine">
-                            <div class="form-pairs">
-                                <label for="tipeOfVaccine" class="simpleLabel">Tipo de biológico</label>
-                                <select class="tipeOfVaccine" id="tipeOfVaccine">
-                                    <option value="0">Seleccionar</option>
-                                    <option value="1">Pfizer</option>
-                                    <option value="2">AstraZeneca</option>
-                                    <option value="3">Janssen</option>
-                                    <option value="4">Moderna</option>
-                                    <option value="5">Sinovac</option>
-                                </select>
-                            </div>
-                            <div class="form-pairs">
-                                <label for="tipeOfDose" class="simpleLabel">Tipo de dosis</label>
-                                <select class="tipeOfDose" id="tipeOfDose">
-                                    <option value="0">Seleccionar</option>
-                                    <option value="1">Primera monodosis</option>
-                                    <option value="2">Segunda monodosis</option>
-                                    <option value="3">Dosis única</option>
-                                </select>
-                            </div>
-                            <div class="form-pairs">
-                                <label for="placeVaccine" class="simpleLabel">Lugar de vacunación</label>
-                                <input type="text" name="placeVaccine" id="placeVaccine">
-                            </div>
-                        </div>
-                    </form>
-                </div>
 
-                <div class="button-confirm">
-                    <a href="pacientes.html"><button class="confirmar">Guardar</button></a>
-                </div>
+                            <div class="form-vaccine">
+                                <div class="form-pairs">
+                                    <input type="number" name="age" id="age" placeholder="Edad">
+                                    <select class="EPS" id="EPS">
+                                        <option value="0">EPS</option>
+                                        <option value="1">Aliansalud</option>
+                                        <option value="2">COMFENALCO Valle E.P.S.</option>
+                                        <option value="3">Empresas Públicas de Medellín-Departamento Médico</option>
+                                        <option value="4">EPS Programa COMFENALCO Antioquia</option>
+                                        <option value="5">Suramericana</option>
+                                        <option value="6">Cafe Salud</option>
+                                        <option value="7">Colpatria</option>
+                                        <option value="8">Compensar</option>
+                                        <option value="9">Cruz Blanca</option>
+                                        <option value="10">Salud Total</option>
+                                        <option value="11">Sanitas</option>
+                                        <option value="12">Coomeva</option>
+                                        <option value="13">Fondo de Pasivo Social de los Ferrocarriles Nales</option>
+                                        <option value="14">Nueva EPS</option>
+                                        <option value="15">Salud Coop</option>
+                                        <option value="16">Servicio Occidental de Salud S.A - EPS S.O.S S.A</option>
+                                        <option value="17">Famisanar</option>
+                                        <option value="18">Golden Group</option>
+                                        <option value="19">Humana Vivir</option>
+                                        <option value="20">Salud Vida</option>
+                                        <option value="21">Sol Salud</option>
+                                        <option value="22">Asociación Mutual Barrios Unidos de Quibdo E.S.S</option>
+                                        <option value="23">Asociación Mutual Ser Empresa Solidaria de Salud ESS</option>
+                                        <option value="24">Caja de Compensación Familiar de Cartagena "COMFAMILIAR"</option>
+                                        <option value="25">Caja de Compensación Familiar CAJACOPI Atlántico</option>
+                                        <option value="26">Pijao Salud</option>
+                                        <option value="27">Selva Salud</option>
+                                        <option value="28">ASMET Salud</option>
+                                        <option value="29">Asociación Indígena del Cauca</option>
+                                        <option value="30">Cafam</option>
+                                        <option value="31">CAPRESOCA</option>
+                                        <option value="32">Comparta</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-register vaccine">
+                            <div class="second-title">
+                                <i class="fa-solid fa-syringe"></i>
+                                <h1 id="form-subtitle">Información de vacunación</h1>
+                            </div>
 
-                <div class="dateNextVaccine">
-                    <h3>La fecha de su siguiente dosis es:</h3>
-                    <p>17/07/2022</p>
-                </div>
-            </div>
+                            <div class="form-vaccine">
+                                <div class="form-pairs">
+                                    <select class="Site" id="Site">
+                                        <option value="0">Sede</option>
+                                        <option value="1">Centro Comercial Titan Plaza</option>
+                                        <option value="2">Centro Comercial Bulevar Niza</option>
+                                        <option value="3">Centro Comercial Carrera</option>
+                                    </select>
+                                    <select class="nurse" id="nurse">
+                                        <option value="0">María Fernandez</option>
+                                        <option value="1">Ana García</option>
+                                        <option value="2">Estella Lopéz</option>
+                                        <option value="3">Lorena Hernández</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-vaccine">
+                                <div class="form-pairs">
+                                    <input type="number" name="idNurse" id="idNurse" placeholder="Id profesional">
+                                    <input type="number" name="tipeOfDose" id="tipeOfDose" placeholder="Dosis">
+                                </div>
+                            </div>
+
+                            <div class="form-vaccine">
+                                <div class="form-pairs">
+                                    <select class="tipeOfVaccine" id="tipeOfVaccine">
+                                        <option value="0">Biológico</option>
+                                        <option value="1">Pfizer</option>
+                                        <option value="2">AstraZeneca</option>
+                                        <option value="3">Janssen</option>
+                                        <option value="4">Moderna</option>
+                                        <option value="5">Sinovac</option>
+                                    </select>
+                                    <input type="text" name="dateFirstDosis" id="dateFirstDosis" placeholder="Fecha 1ra dosis">
+                                    <input type="text" name="dateSecondDosis" id="dateSecondDosis" placeholder="Fecha 2da dosis">
+                                </div>
+                            </div>
+
+                            <div class="form-vaccine">
+                                <div class="form-pairs">
+                                    <textarea class="textarea-vaccine"name="aditionalNotes" id="aditionalNotes"placeholder="Observaciones adicionales"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
         </section>
     </main>
 

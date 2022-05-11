@@ -446,28 +446,6 @@ form {
     cursor: pointer;
 }
 
-.ingresar:hover{
-    animation: cartel 1s 1;
-}
-
-@keyframes cartel {
-    20% {
-        transform: rotate(15deg);
-    }
-
-    40% {
-        transform: rotate(-10deg);
-    }
-
-    60% {
-        transform: rotate(5deg);
-    }
-
-    80% {
-        transform: rotate(-3deg);
-    }
-}
-
 .forget a {
     color: black;
     display: flex;
@@ -726,6 +704,40 @@ form {
 }
 
 /* Formulario de vacunas*/
+.buttons-vaccine {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+}
+
+.btn-confirm-vaccine, .btn-back-vaccine{
+    background-color: var(--orange-color);
+    border: 1px solid var(--orange-color);
+    border-radius: 5px;
+    color: white;
+    padding: .5rem;
+}
+
+.btn-confirm-vaccine:hover, .btn-back-vaccine:hover{
+    background-color: white;
+    color: var(--orange-color);
+}
+
+.vaccine{
+    margin: 1rem;
+}
+
+.vaccineTittles{
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: .5rem;
+}
+
+.section-form-vaccine{
+    margin: .5rem;
+}
+
 .form-vaccine {
     display: flex;
     flex-direction: column;
@@ -734,10 +746,11 @@ form {
 }
 
 .form-pairs{
-    margin: .5rem 0;
+    display: flex;
+    flex-direction: column;
 }
 
-.form-vaccine input, .form-vaccine select{
+.form-vaccine input, .form-vaccine select, .form-vaccine textarea{
     color: grey;
     border: 1px solid var(--blue-color);
     border-radius: 5px;
@@ -750,22 +763,8 @@ form {
     padding: 0;
 }
 
-.simpleLabel{
-    padding: .5rem;
-}
-
-.dateNextVaccine{
-    background-color: var(--gray-color);
-    border: 1px solid var(--darkblue-color);
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.dateNextVaccine p{
-    color: var(--orange-color);
-    text-align: center;
+.textarea-vaccine{
+    height: 100px;
 }
 
 /* Pacientes.html*/
@@ -829,12 +828,20 @@ form {
     padding: .2rem;
 }
 
+.button-confirm{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
 .btn-confirm-patient{
     background-color: var(--orange-color);
     border: 1px solid var(--gray-color);
     border-radius: 5px;
     color: white;
-    margin: 0.5rem;
+    margin: .5rem auto;
     padding: 0.5rem 1rem;
 }
 
@@ -1008,7 +1015,7 @@ table td[data-titulo]::before {
 
 .second-title i {
     align-items: flex-start;
-    color: black;
+    color: white;
     display: flex;
     height: 20px;
     margin-right: .1rem;
@@ -1065,32 +1072,12 @@ table td[data-titulo]::before {
     justify-content: center;
 }
 
-.button-confirm {
-    display: flex;
-    justify-content: center;
-    margin: 1rem;
-}
-
-.button-confirm:hover{
-    animation: cartel 1s 1;
-}
-
-@keyframes cartel {
-    20% {
-        transform: rotate(15deg);
-    }
-
-    40% {
-        transform: rotate(-10deg);
-    }
-
-    60% {
-        transform: rotate(5deg);
-    }
-
-    80% {
-        transform: rotate(-3deg);
-    }
+.btn-confirm-patient{
+    background-color: var(--orange-color);
+    border: 1px solid var(--orange-color);
+    border-radius: 5px;
+    color: white;
+    padding: .2rem .5rem;
 }
 
 /*Resolución de tablet*/
@@ -1121,32 +1108,52 @@ table td[data-titulo]::before {
     }
 
     /* Formulario de vacunas*/
-    .vaccine form{
+    .buttons-vaccine{
+        justify-content: flex-end;
+    }
+
+    .btn-confirm-vaccine, .btn-back-vaccine{
+        margin: 0 1rem;
+    }
+
+    .section-form-vaccine{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-form-vaccine form{
         justify-content: center;
-        min-width: 600px;
+        margin: 0 1rem;
+        min-width: 700px;
+        width: 100%;
+    }
+    
+    .vaccine{
+        width: 100%;
     }
 
     .form-vaccine{
-        flex-direction: row;
+        flex-direction: column;
         margin: .5rem;
     }
 
     .form-pairs{
+        flex-direction: row;
         flex-basis: 50%;
+        justify-content: space-between;
         margin: 0 .5rem;
     }
 
     .form-vaccine input, .form-vaccine select{
+        margin: 0 .5rem;
         max-height: 31px;
     }
 
-    .simpleLabel{
-        padding: .5rem 0;
-    }
-
-    .dateNextVaccine{
-        margin: .5rem auto;
-        max-width: 400px;
+    .textarea-vaccine{
+        margin: 0 auto;
+        max-width: 300px;
+        max-height: 101px;
     }
 
     /* Pacientes.html*/
@@ -1263,6 +1270,17 @@ table td[data-titulo]::before {
         100%{
             transform: translateY(0);
         }
+    }
+
+    /* Formulario de vacunas*/
+    .section-form-vaccine form{
+        min-width: 1000px;
+    }
+
+    .textarea-vaccine{
+        margin-top: 1rem;
+        max-width: 450px;
+        max-height: 101px;
     }
 
     /* Pacientes.html*/
