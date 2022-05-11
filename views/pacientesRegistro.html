@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
-    <title>Registro</title>
+    <title>Registro Pacientes</title>
 </head>
 <body>
 
@@ -30,10 +30,10 @@
             <div  class="section-part">
                 <h1 class="important-title">Registro Usuario Nuevo</h1>
 
-                <div class="form-register">
-                    <form action="post">
+                <div class="form-register"> 
+                    <form action="pacientes.html">
                         <div class="form-first-division">
-                            <input type="date" name="fecha" id="fecha">
+                            <input type="date" name="fecha" id="fecha" required>
                             <input type="number" name="idform" id="idform" placeholder="N Registro">
                         </div>
 
@@ -44,12 +44,12 @@
 
                         <div class="form-second-division">
                             <div class="form-little-division">
-                                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
-                                <input type="text" name="apellido" id="apellido" placeholder="Apellidos">
+                                <input type="text" name="nombre" id="nombre" pattern="[A-Za-z\s]{1,32}" title="El nombre solo contiene letras. e.g. John" placeholder="Escribe tu nombre" required>
+                                <input type="text" name="apellido" id="apellido" pattern="[A-Za-z\s]{1,32}" title="El nombre solo contiene letras. e.g. John" placeholder="Apellidos" required>
                             </div>
                             <div class="form-little-division">
-                                <input type="number" name="identificacion" id="identificacion" placeholder="Número de identificación">
-                                <select name="tipo-id" id="tipo-id">
+                                <input type="number" name="identificacion" id="identificacion" placeholder="Número de identificación" required>
+                                <select name="tipo-id" id="tipo-id" required> 
                                     <option value="0">Seleccione el tipo de documento</option>
                                     <option value="1">Cédula de ciudadanía</option>
                                     <option value="2">Cédula de extranjería</option>
@@ -145,12 +145,12 @@
 
                             <div class="form-little-division">
                                 <input type="text" name="direccion" id="direccion" placeholder="Dirección">
-                                <input type="email" name="correo" id="correo" placeholder="Correo">
+                                <input type="email" name="correo" id="correo" placeholder="Correo" required>
                             </div>
 
                             <div class="form-little-division">
                                 <input type="number" name="fijo" id="fijo" placeholder="Télefono fijo">
-                                <input type="number" name="celular" id="celular" placeholder="Celular">
+                                <input type="number" name="celular" id="celular" placeholder="Celular" required>
                             </div>
                         </div>
 
@@ -193,15 +193,14 @@
 
                             <p>¿El paciente ha tenido un contacto estrecho o cercano con una persona confirmada o sospechosa de COVID-19 en los últimos 14 días?</p>
                             <div class="selector">
-                                <input type="radio" name="prubac" id="pruebac">Sí
-                                <input type="radio" name="prubac" id="pruebac">No
+                                <input type="radio" name="prubac1" id="pruebac1">Sí
+                                <input type="radio" name="prubac1" id="pruebac1">No
                             </div>
                         </div>
+                        <div class="button-confirm">
+                            <input type="submit" class="btn-confirm-patient-form" value="Guardar">
+                        </div>
                     </form>
-                </div>
-
-                <div class="button-confirm">
-                    <a href="pacientes.html" class="btn-confirm-patient">Guardar</a>
                 </div>
             </div>
         </section>

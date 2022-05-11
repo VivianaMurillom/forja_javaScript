@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
-    <title>Registro</title>
+    <title>Registro Vacunas</title>
 </head>
 <body>
 
@@ -27,7 +27,7 @@
 
     <main>
         <div class="buttons-vaccine">
-            <a href="pacientes.html" class="btn-confirm-vaccine">Guardar cambios</a>
+            <a href="pacientes.html" form="form" type="submit" class="btn-confirm-vaccine">Guardar cambios</a>
             <a href="dashboard.html" class="btn-back-vaccine">Cerrar</a>
         </div>
         
@@ -37,11 +37,11 @@
         </div>
 
         <section class="section-form-vaccine">
-                    <form action="post">
+                    <form action="pacientes.html">
                         <div class="form-register vaccine">
                             <div class="form-vaccine">
                                 <div class="form-pairs">
-                                    <input type="date" name="simpleDate" id="simpleDate">
+                                    <input type="date" name="simpleDate" id="simpleDate" required>
                                     <input type="number" name="registerNumber" id="registerNumber" placeholder="Número de registro">
                                 </div>
                             </div>
@@ -51,21 +51,21 @@
                             </div>
                             <div class="form-vaccine">
                                 <div class="form-pairs">
-                                    <input type="text" name="names" id="names" placeholder="Nombres">
-                                    <input type="text" name="lastNames" id="lastNames" placeholder="Apellidos">
+                                    <input type="text" name="names" id="names" pattern="[A-Za-z\s]{1,32}" title="El nombre solo contiene letras. e.g. John" placeholder="Nombres" required>
+                                    <input type="text" name="lastNames" id="lastNames" pattern="[A-Za-z\s]{1,32}" title="El nombre solo contiene letras. e.g. John" placeholder="Apellidos" required>
                                 </div>
                             </div>
                             <div class="form-vaccine">
                                 <div class="form-pairs">
-                                    <input type="number" name="numberDocument" id="numberDocument" placeholder="Número de identificación">
+                                    <input type="number" name="numberDocument" id="numberDocument" placeholder="Número de identificación" required>
                                     <input type="date" name="DateDocument" id="DateDocument">
                                 </div>
                             </div>
 
                             <div class="form-vaccine">
                                 <div class="form-pairs">
-                                    <input type="number" name="age" id="age" placeholder="Edad">
-                                    <select class="EPS" id="EPS">
+                                    <input type="number" name="age" id="age" placeholder="Edad" required>
+                                    <select class="EPS" id="EPS" required>
                                         <option value="0">EPS</option>
                                         <option value="1">Aliansalud</option>
                                         <option value="2">COMFENALCO Valle E.P.S.</option>
@@ -112,13 +112,13 @@
 
                             <div class="form-vaccine">
                                 <div class="form-pairs">
-                                    <select class="Site" id="Site">
+                                    <select class="Site" id="Site" required>
                                         <option value="0">Sede</option>
                                         <option value="1">Centro Comercial Titan Plaza</option>
                                         <option value="2">Centro Comercial Bulevar Niza</option>
                                         <option value="3">Centro Comercial Carrera</option>
                                     </select>
-                                    <select class="nurse" id="nurse">
+                                    <select class="nurse" id="nurse" required>
                                         <option value="0">María Fernandez</option>
                                         <option value="1">Ana García</option>
                                         <option value="2">Estella Lopéz</option>
@@ -130,13 +130,13 @@
                             <div class="form-vaccine">
                                 <div class="form-pairs">
                                     <input type="number" name="idNurse" id="idNurse" placeholder="Id profesional">
-                                    <input type="number" name="tipeOfDose" id="tipeOfDose" placeholder="Dosis">
+                                    <input type="text" name="tipeOfDose" id="tipeOfDose" placeholder="Dosis" required>
                                 </div>
                             </div>
 
                             <div class="form-vaccine">
                                 <div class="form-pairs">
-                                    <select class="tipeOfVaccine" id="tipeOfVaccine">
+                                    <select class="tipeOfVaccine" id="tipeOfVaccine" required>
                                         <option value="0">Biológico</option>
                                         <option value="1">Pfizer</option>
                                         <option value="2">AstraZeneca</option>
@@ -156,6 +156,7 @@
                             </div>
                         </div>
                     </div>
+                    <input type="submit" class="btn-confirm-patient-form" value="Guardar">
                 </form>
         </section>
     </main>

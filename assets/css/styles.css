@@ -828,20 +828,11 @@ form {
     padding: .2rem;
 }
 
-.button-confirm{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin: 1rem;
-    padding: 1rem;
-}
-
 .btn-confirm-patient{
     background-color: var(--orange-color);
     border: 1px solid var(--gray-color);
     border-radius: 5px;
     color: white;
-    margin: .5rem auto;
     padding: 0.5rem 1rem;
 }
 
@@ -1072,11 +1063,12 @@ table td[data-titulo]::before {
     justify-content: center;
 }
 
-.btn-confirm-patient{
+.btn-confirm-patient-form input{
     background-color: var(--orange-color);
     border: 1px solid var(--orange-color);
     border-radius: 5px;
     color: white;
+    cursor: pointer;
     padding: .2rem .5rem;
 }
 
