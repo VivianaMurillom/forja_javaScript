@@ -706,11 +706,11 @@ form {
 /* Formulario de vacunas*/
 .buttons-vaccine {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     margin: 1rem;
 }
 
-.btn-confirm-vaccine, .btn-back-vaccine{
+.btn-back-vaccine{
     background-color: var(--orange-color);
     border: 1px solid var(--orange-color);
     border-radius: 5px;
@@ -718,7 +718,7 @@ form {
     padding: .5rem;
 }
 
-.btn-confirm-vaccine:hover, .btn-back-vaccine:hover{
+.btn-back-vaccine:hover{
     background-color: white;
     color: var(--orange-color);
 }
@@ -765,6 +765,26 @@ form {
 
 .textarea-vaccine{
     height: 100px;
+}
+
+.space-btn-save{
+    left:-50px;
+    position:relative;
+    top:-1390px;
+}
+
+.space-btn-save input{
+    background-color: var(--orange-color);
+    border: 1px solid var(--orange-color);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: .5rem .5rem;
+}
+
+.space-btn-save input:hover{
+    background-color: white;
+    color: var(--orange-color);
 }
 
 /* Pacientes.html*/
@@ -958,6 +978,7 @@ table td[data-titulo]::before {
     border: 2px solid var(--gray-color);
     margin: 1rem;
     padding: 2rem;
+    padding-bottom: 4rem;
 }
 
 .important-title {
@@ -1063,13 +1084,23 @@ table td[data-titulo]::before {
     justify-content: center;
 }
 
-.btn-confirm-patient-form input{
+.button-confirm{
+    bottom: -90px;
+    position: relative;
+}
+
+.button-confirm input{
     background-color: var(--orange-color);
     border: 1px solid var(--orange-color);
     border-radius: 5px;
     color: white;
     cursor: pointer;
-    padding: .2rem .5rem;
+    padding: .5rem 1rem;
+}
+
+.button-confirm input:hover{
+    background-color: white;
+    color: var(--orange-color);
 }
 
 /*Resolución de tablet*/
@@ -1104,7 +1135,7 @@ table td[data-titulo]::before {
         justify-content: flex-end;
     }
 
-    .btn-confirm-vaccine, .btn-back-vaccine{
+    .btn-back-vaccine{
         margin: 0 1rem;
     }
 
@@ -1146,6 +1177,12 @@ table td[data-titulo]::before {
         margin: 0 auto;
         max-width: 300px;
         max-height: 101px;
+    }
+
+    .space-btn-save{
+        left:130px;
+        position:relative;
+        top:-1015px;
     }
 
     /* Pacientes.html*/
